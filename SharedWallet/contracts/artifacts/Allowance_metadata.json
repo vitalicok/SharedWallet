@@ -42,44 +42,6 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "_from",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "MoneyReceived",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_beneficiary",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "MoneySent",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
 						"name": "previousOwner",
 						"type": "address"
 					},
@@ -92,10 +54,6 @@
 				],
 				"name": "OwnershipTransferred",
 				"type": "event"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
 			},
 			{
 				"inputs": [
@@ -179,24 +137,6 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address payable",
-						"name": "_to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "withdrawMoney",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -229,7 +169,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SharedWallet/contracts/SharedWallet.sol": "SharedWallet"
+			"SharedWallet/contracts/Allowance.sol": "Allowance"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -248,13 +188,6 @@
 			"urls": [
 				"bzz-raw://f533d5e342b09d68300c20c1c8a70fa66f4c3cca68e3cd0bb7e8f13af8d5a425",
 				"dweb:/ipfs/QmU8Gw2X2BJcGo3SQP666RDLNuUKcznsMrnjYwXc7YzL9E"
-			]
-		},
-		"SharedWallet/contracts/SharedWallet.sol": {
-			"keccak256": "0x8cdf8d640f36d52ecca899fb8cd5c9f79d3c7f6dc573b2c5db6c73c6d3bdb4a8",
-			"urls": [
-				"bzz-raw://8b8037bdf779bd4d32a54d37751f10c32290dc401985513c495a3cb6d1746f17",
-				"dweb:/ipfs/QmZsEigyjor3bhE61JsRjFRPSbp3BJhHxMrDk3ctWpQ8dX"
 			]
 		},
 		"SharedWallet/contracts/utils/OwnerExtenstions.sol": {

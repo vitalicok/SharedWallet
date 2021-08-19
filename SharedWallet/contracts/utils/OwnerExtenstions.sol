@@ -8,7 +8,7 @@ along with extending an existing module which is
 Ownable that does not have enough functionalities
 for actions that will be made for the main project
 */
-abstract contract OwnerExtension is Ownable{
+abstract contract OwnerExtenstions is Ownable{
     
     
     /*
